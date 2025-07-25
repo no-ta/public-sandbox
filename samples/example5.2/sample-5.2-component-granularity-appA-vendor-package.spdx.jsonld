@@ -1,0 +1,193 @@
+{
+    "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+    "@graph": [
+        {
+            "type": "SpdxDocument",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Document/1",
+            "name": "component-granularity-sample-appA-vendor-package-0.1",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of Sbom object"
+            }],
+            "rootElement": [ "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Sbom/1" ],
+            "element": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Sbom/1"
+            ],
+            "dataLicense": "CC0-1.0"
+        },
+        {
+            "type": "software_Sbom",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Sbom/1",
+            "creationInfo": "_:creationinfo",
+            "rootElement": [ "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1" ],
+            "element": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/2",		
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/1",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/2",		
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/1",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/2",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/3",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/4",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/5",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/6",
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/7"		
+            ],
+            "software_sbomType": [ "build" ]
+        },
+        {
+            "type": "CreationInfo",
+            "@id": "_:creationinfo",
+            "specVersion": "3.0.1",
+            "comment": "if any",
+            "created": "2024-05-06T00:00:00Z",
+            "createdBy": [ "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Agent/appAVendor" ]
+        },
+        {
+            "type": "Organization",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Agent/AppAVendor",
+            "name": "appA vendor",
+            "creationInfo": "_:creationinfo",
+            "externalIdentifier": [{
+                "type": "ExternalIdentifier",
+                "externalIdentifierType": "email",
+                "identifier": "appA.vendor@appAvendor.com"
+            }]
+        },
+        {
+            "type": "software_Package",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1",
+            "name": "appA",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of the package file"
+            }],
+            "originatedBy": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Agent/appAVendor"
+            ],
+            "suppliedBy": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Agent/appAVendor",
+            "builtTime": "2024-05-06T00:00:00Z",
+            "releaseTime": "2024-05-06T00:00:00Z",
+            "validUntilTime": "2034-05-06T00:00:00Z",
+            "software_copyrightText": "copyright text",
+            "software_packageVersion": "1.1",
+            "software_downloadLocation": "http://appA.vendor.com/appA_v1.1.tar",
+            "software_packageUrl": "pkg:github/example/appA/releases/tag/v1.1",
+            "software_homePage": "website for the Package/1"
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/1",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+            "simplelicensing_licenseListVersion": "3.23.0"
+        },
+        {
+            "type": "software_Package",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/2",
+            "name": "libc6",
+            "comment": "if any",
+            "creationInfo": "_:creationinfo",
+            "verifiedUsing": [{
+                "type": "Hash",
+                "algorithm": "sha3_512",
+                "hashValue": "hash value of the package file"
+            }],
+            "originatedBy": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Agent/appAVendor"
+            ],
+            "suppliedBy": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Agent/appAVendor",
+            "builtTime": "2024-05-06T00:00:00Z",
+            "releaseTime": "2024-05-06T00:00:00Z",
+            "validUntilTime": "2034-05-06T00:00:00Z",
+            "software_copyrightText": "copyright text",
+            "software_packageVersion": "2.35",
+            "software_downloadLocation": "http://appA.vendor.com/appA_v2.35.tar",
+            "software_packageUrl": "pkg:github/example/appA/releases/tag/v2.35",
+            "software_homePage": "website for the Package/2"
+        },
+        {
+            "type": "simplelicensing_LicenseExpression",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/2",
+            "creationInfo": "_:creationinfo",
+            "simplelicensing_licenseExpression": "LGPL-2.1-or-later",
+            "simplelicensing_licenseListVersion": "3.23.0"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/1",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Sbom/1",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1"
+            ],
+            "relationshipType": "contains"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/2",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/1"
+            ],
+            "relationshipType": "hasDeclaredLicense"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/3",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/1"
+            ],
+            "relationshipType": "hasConcludedLicense"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/4",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Sbom/1",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/2"
+            ],
+            "relationshipType": "contains"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/5",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/2",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/2"
+            ],
+            "relationshipType": "hasDeclaredLicense"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/6",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/2",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/LicenseExpression/2"
+            ],
+            "relationshipType": "hasConcludedLicense"
+        },
+        {
+            "type": "Relationship",
+            "spdxId": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Relationship/7",
+            "creationInfo": "_:creationinfo",
+            "from": "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/1",
+            "to": [
+                "https://spdx.org/spdxdocs/1b657164-b468-11ef-a392-35d61d742a5e/Package/2"
+            ],
+            "relationshipType": "dependsOn"
+        }
+    ]
+}

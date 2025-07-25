@@ -1,0 +1,84 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "component-granularity-sample-productX-user-file-0.1",
+    "documentNamespace": "https://component-granularity-productx-maker-file.com/sample-0.1-01c47915-4777-11d8-bc70-0090272ff725",
+    "creationInfo": {
+        "created": "2025-06-25T15:54:30Z",
+        "creators": [
+            "Organization: productX maker"
+        ]
+    },
+    "files": [
+        {
+            "fileName": "usr/bin/appA",
+            "SPDXID": "SPDXRef-File-usr-bin-appA-bb20f69585481679",
+            "fileTypes": [
+                "APPLICATION",
+                "BINARY"
+            ],
+	    "fileContributors": [ "Organization: appA vendor" ],
+	    "comment": "Version 1.1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "3a4e7cd2b8f885acaf1ade6b3586b7ca9b2d2d28"
+                }
+            ]
+        },
+        {
+            "fileName": "usr/bin/appX",
+            "SPDXID": "SPDXRef-File-usr-bin-appX-cc20f69585481679",
+            "fileTypes": [
+                "APPLICATION",
+                "BINARY"
+            ],
+	    "fileContributors": [ "Organization: productX maker" ],
+	    "comment": "Version 1.0",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "67651b75507a258357c9b6c3fd2554da5962de9f"
+                }
+            ]
+        },
+        {
+            "fileName": "usr/lib/libc.so",
+            "SPDXID": "SPDXRef-File-usr-lib-libc.so-955cf69da2b4d07f",
+            "fileTypes": [
+                "BINARY"
+            ],
+	    "fileContributors": [ "Organization: productX maker" ],
+	    "comment": "Version 2.39",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4940dfdeb74562feca5ca756ee634a76f869bf64"
+                }
+            ]
+        }
+    ],
+    "relationships": [
+         {
+            "spdxElementId": "SPDXRef-File-usr-bin-appA-bb20f69585481679",
+            "relatedSpdxElement": "SPDXRef-File-usr-lib-libc.so-955cf69da2b4d07f",
+            "relationshipType": "DEPENDS_ON"
+        },
+         {
+            "spdxElementId": "SPDXRef-File-usr-bin-appX-cc20f69585481679",
+            "relatedSpdxElement": "SPDXRef-File-usr-lib-libc.so-955cf69da2b4d07f",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-File-usr-bin-appA-bb20f69585481679",
+            "relationshipType": "DESCRIBES"
+        },
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-File-usr-bin-appX-cc20f69585481679",
+            "relationshipType": "DESCRIBES"
+        }
+    ]
+}
