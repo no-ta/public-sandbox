@@ -3,7 +3,7 @@
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
   "serialNumber": "https://component-granularity-appa-vendor-file.com/sample-0.1-1b657164-b468-11ef-a392-35d61d742a5e#DOCUMENT",
-  "version": 0,
+  "version": 1,
   "metadata": {
     "authors": [
       {
@@ -12,8 +12,8 @@
     ],
     "component": {
       "bom-ref": "File-usr-bin-appA-bb20f69585481679",
-      "type": "file",
-      "name": "component-granularity-sample-appA-vendor-file-0.1",
+      "type": "application",
+      "name": "usr/bin/appA",
       "hashes": [
         {
           "alg": "SHA-1",
@@ -25,13 +25,21 @@
   "components": [
     {
       "bom-ref": "File-usr-lib-libc.so-844cf69da2b4d07f",
-      "type": "file",
+      "type": "library",
       "name": "usr/lib/libc.so",
       "hashes": [
         {
           "alg": "SHA-1",
           "content": "932d9f3187642d63804c24e6569576bfcf7dd9fa"
         }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "File-usr-bin-appA-bb20f69585481679",
+      "dependsOn": [
+        "File-usr-lib-libc.so-844cf69da2b4d07f"
       ]
     }
   ]
