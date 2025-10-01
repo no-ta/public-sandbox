@@ -5,6 +5,12 @@
   "serialNumber": "https://component-granularity-productx-maker-file.com/sample-0.1-01c47915-4777-11d8-bc70-0090272ff725#DOCUMENT",
   "version": 1,
   "metadata": {
+    "timestamp": "2025-06-25T15:54:30Z",
+    "lifecycles": [
+      {
+      "phase": "post-build"
+      }
+    ],
     "authors": [
       {
         "name": "productX maker"
@@ -14,6 +20,22 @@
       "bom-ref": "File-usr-bin-appX-cc20f69585481679",
       "type": "application",
       "name": "usr/bin/appX",
+      "version": "1.0",
+      "supplier": {
+         "name": "productX maker"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+          "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
       "hashes": [
         {
           "alg": "SHA-1",
@@ -27,6 +49,17 @@
       "bom-ref": "File-usr-lib-libc.so-955cf69da2b4d07f",
       "type": "library",
       "name": "usr/lib/libc.so",
+      "version": "2.39",
+      "supplier": {
+         "name": "productX maker"
+      },
+      "licenses": [
+        {
+          "license": {
+          "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
       "hashes": [
         {
           "alg": "SHA-1",

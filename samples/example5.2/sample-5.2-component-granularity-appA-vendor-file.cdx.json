@@ -5,6 +5,12 @@
   "serialNumber": "https://component-granularity-appa-vendor-file.com/sample-0.1-1b657164-b468-11ef-a392-35d61d742a5e#DOCUMENT",
   "version": 1,
   "metadata": {
+    "timestamp": "2025-06-25T15:54:30Z",
+    "lifecycles": [
+      {
+      "phase": "post-build"
+      }
+    ],
     "authors": [
       {
         "name": "appA vendor"
@@ -14,7 +20,23 @@
       "bom-ref": "File-usr-bin-appA-bb20f69585481679",
       "type": "application",
       "name": "usr/bin/appA",
-      "hashes": [
+      "version": "1.1",
+      "supplier": {
+         "name": "appA vendor"
+      },
+       "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+          "id": "LGPL-2.1-or-later"
+          }
+        }
+     ],
+     "hashes": [
         {
           "alg": "SHA-1",
           "content": "3a4e7cd2b8f885acaf1ade6b3586b7ca9b2d2d28"
@@ -27,6 +49,17 @@
       "bom-ref": "File-usr-lib-libc.so-844cf69da2b4d07f",
       "type": "library",
       "name": "usr/lib/libc.so",
+      "version": "2.35",
+      "supplier": {
+         "name": "appA vendor"
+      },
+      "licenses": [
+        {
+          "license": {
+          "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
       "hashes": [
         {
           "alg": "SHA-1",
