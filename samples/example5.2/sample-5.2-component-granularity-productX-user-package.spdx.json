@@ -60,8 +60,9 @@
                 "APPLICATION",
                 "BINARY"
             ],
-	    "fileContributors": [ "Organization: appA vendor" ],
-	    "comment": "Version 1.1",
+            "fileContributors": [ "Organization: appA vendor" ],
+            "comment": "Version 1.1",
+            "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
             "checksums": [
                 {
                     "algorithm": "SHA1",

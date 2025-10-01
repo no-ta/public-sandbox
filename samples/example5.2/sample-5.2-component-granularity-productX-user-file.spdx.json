@@ -28,8 +28,9 @@
                 "APPLICATION",
                 "BINARY"
             ],
-	    "fileContributors": [ "Organization: appA vendor" ],
-	    "comment": "Version 1.1",
+            "fileContributors": [ "Organization: appA vendor" ],
+            "comment": "Version 1.1",
+            "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
             "checksums": [
                 {
                     "algorithm": "SHA1",
@@ -44,8 +45,9 @@
                 "APPLICATION",
                 "BINARY"
             ],
-	    "fileContributors": [ "Organization: productX maker" ],
-	    "comment": "Version 1.0",
+            "fileContributors": [ "Organization: productX maker" ],
+            "comment": "Version 1.0",
+            "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
             "checksums": [
                 {
                     "algorithm": "SHA1",
@@ -59,8 +61,9 @@
             "fileTypes": [
                 "BINARY"
             ],
-	    "fileContributors": [ "Organization: productX maker" ],
-	    "comment": "Version 2.39",
+            "fileContributors": [ "Organization: productX maker" ],
+            "comment": "Version 2.39",
+            "licenseConcluded": "LGPL-2.1-or-later",
             "checksums": [
                 {
                     "algorithm": "SHA1",

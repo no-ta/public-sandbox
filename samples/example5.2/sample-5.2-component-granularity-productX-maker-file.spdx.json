@@ -18,8 +18,9 @@
                 "APPLICATION",
                 "BINARY"
             ],
-	    "fileContributors": [ "Organization: productX maker" ],
-	    "comment": "Version 1.0",
+            "fileContributors": [ "Organization: productX maker" ],
+            "comment": "Version 1.0",
+            "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
             "checksums": [
                 {
                     "algorithm": "SHA1",
@@ -34,7 +35,8 @@
                 "BINARY"
             ],
 	    "fileContributors": [ "Organization: productX maker" ],
-	    "comment": "Version 2.39",
+            "comment": "Version 2.39",
+            "licenseConcluded": "LGPL-2.1-or-later",
             "checksums": [
                 {
                     "algorithm": "SHA1",
