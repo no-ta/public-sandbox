@@ -67,7 +67,7 @@
                 "SOURCE"
             ],
             "fileContributors": [ "Organization: Proprietary Software" ],
-            "licenseConcluded": "NOASSERTION",
+            "licenseConcluded": "LicenseRef-App-C-Proprietary",
             "checksums": [
                 {
                     "algorithm": "SHA1",
