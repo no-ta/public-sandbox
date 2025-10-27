@@ -1,0 +1,101 @@
+# SPDXIDとか名前系に ''は使えないですよね元の図も変更したほうがいいのでは bb にするとか
+# documentNamespaceの書き方をどうするか
+# パッケージのバージョン番号はどうする
+# OSSのファイルの fileContrbutorsを書くために、元の図にOSSプロジェクトの名前を書いておいたほうがいいのでは
+# ソースコードパッケージの場合のpurlのtypeはどうなるのか
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "app-A-src.json",
+    "documentNamespace": "https://App-A-srcpkg-Provider.com/App-A-srcpkg-1b657164-b468-11ef-a392-35d61d742a5e",
+    "creationInfo": {
+        "created": "0000-00-00T00:00:00Z",
+        "creators": [
+            "Organization: App-A srcpkg Provider, App-A-src@contacts"
+        ]
+    },
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-App-A-srcpkg",
+            "name": "App-A srcpkg",
+            "versionInfo": "1.0",
+            "supplier": "Organization: App-A srcpkg Provider, App-A-src@contacts", 
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": true,
+            "licenseConcluded": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:tar/app-a-srcpkg-provider/app-a-src@1.0"
+                }
+            ]
+	    
+        }
+    ],
+    "files": [
+        {
+            "fileName": "app-a.c",
+            "SPDXID": "SPDXRef-File-app-a.c",
+            "fileTypes": [
+                "SOURCE"
+            ],
+            "fileContributors": [ "Open Srouce Software" ],
+            "licenseConcluded": "NOASSERTION",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "3a22280662462357b7a9f877d27daf2a6ba7e1ca"
+                }
+            ]
+        },
+        {
+            "fileName": "app-bdash.c",
+            "SPDXID": "SPDXRef-File-app-bdash.c",
+            "fileTypes": [
+                "SOURCE"
+            ],
+            "fileContributors": [ "Organization: App-A srcpkg Provider, App-A-src@contats" ],
+            "licenseConcluded": "NOASSERTION",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1bfd9c8c661a3d567448eb689cff0a850ace3c52"
+                }
+            ]
+        },
+        {
+            "fileName": "app-c.c",
+            "SPDXID": "SPDXRef-File-app-c.c",
+            "fileTypes": [
+                "SOURCE"
+            ],
+            "fileContributors": [ "Organization: Proprietary Software" ],
+            "licenseConcluded": "NOASSERTION",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "eafe32c1345a0bbebaa5126934740a9e8c892696"
+                }
+            ]
+        }
+    ],
+    "relationships": [
+         {
+            "spdxElementId": "SPDXRef-App-A-srcpkg",
+            "relatedSpdxElement": "SPDXRef-File-app-a.c",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-App-A-srcpkg",
+            "relatedSpdxElement": "SPDXRef-File-app-b'.c",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-App-A-srcpkg",
+            "relatedSpdxElement": "SPDXRef-File-app-c.c",
+            "relationshipType": "CONTAINS"
+        }
+    ]
+}
