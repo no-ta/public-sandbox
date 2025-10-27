@@ -5,7 +5,7 @@
     "name": "app-A-src.json",
     "documentNamespace": "https://App-A-srcpkg-Provider.com/App-A-srcpkg-1b657164-b468-11ef-a392-35d61d742a5e",
     "creationInfo": {
-        "created": "2025-10-27T15:40:00Z",
+        "created": "2025-10-27T00:00:00Z",
         "creators": [
             "Organization: App-A srcpkg Provider, App-A-src@contacts"
         ]
@@ -14,7 +14,7 @@
         {
             "SPDXID": "SPDXRef-App-A-srcpkg",
             "name": "App-A srcpkg",
-            "versionInfo": "1.0",
+            "versionInfo": "1.0.0",
             "supplier": "Organization: App-A srcpkg Provider, App-A-src@contacts", 
             "downloadLocation": "NOASSERTION",
             "filesAnalyzed": true,
@@ -23,7 +23,7 @@
                 {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceType": "purl",
-                    "referenceLocator": "pkg:tar/app-a-srcpkg-provider/app-a-src@1.0"
+                    "referenceLocator": "purl-app-a-src"
                 }
             ]
 	    
@@ -36,7 +36,7 @@
             "fileTypes": [
                 "SOURCE"
             ],
-            "fileContributors": [ "Open Srouce Software" ],
+            "fileContributors": [ "OSS-A Provider" ],
             "licenseConcluded": "NOASSERTION",
             "checksums": [
                 {
@@ -46,13 +46,13 @@
             ]
         },
         {
-            "fileName": "app-bdash.c",
-            "SPDXID": "SPDXRef-File-app-bdash.c",
+            "fileName": "app-b-modified.c",
+            "SPDXID": "SPDXRef-File-app-b-modified.c",
             "fileTypes": [
                 "SOURCE"
             ],
             "fileContributors": [ "Organization: App-A srcpkg Provider, App-A-src@contats" ],
-            "licenseConcluded": "NOASSERTION",
+            "licenseConcluded": "MIT",
             "checksums": [
                 {
                     "algorithm": "SHA1",
@@ -67,7 +67,7 @@
                 "SOURCE"
             ],
             "fileContributors": [ "Organization: Proprietary Software" ],
-            "licenseConcluded": "LicenseRef-App-C-Proprietary",
+            "licenseConcluded": "LicenseRef-proprietary-1",
             "checksums": [
                 {
                     "algorithm": "SHA1",
@@ -84,7 +84,7 @@
         },
         {
             "spdxElementId": "SPDXRef-App-A-srcpkg",
-            "relatedSpdxElement": "SPDXRef-File-app-b'.c",
+            "relatedSpdxElement": "SPDXRef-File-app-b-modified.c",
             "relationshipType": "CONTAINS"
         },
         {
