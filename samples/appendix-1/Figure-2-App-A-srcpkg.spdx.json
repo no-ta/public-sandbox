@@ -2,9 +2,10 @@
     "spdxVersion": "SPDX-2.3",
     "dataLicense": "CC0-1.0",
     "SPDXID": "SPDXRef-DOCUMENT",
-    "name": "figure-1-app-A-src.json",
-    "documentNamespace": "Sample-documentNamespace-figure-1-app-A-src",
+    "name": "figure-2-app-A-src.json",
+    "documentNamespace": "Sample-documentNamespace-figure-2-app-A-src",
     "creationInfo": {
+	"comment": "SBOM Type: Source",
         "created": "2025-10-27T00:00:00Z",
         "creators": [
             "Organization: App-A srcpkg Provider, App-A-src@contacts"
@@ -36,7 +37,7 @@
             "fileTypes": [
                 "SOURCE"
             ],
-            "fileContributors": [ "OSS-A Provider" ],
+            "fileContributors": [ "OSS-App Provider" ],
             "licenseConcluded": "MIT",
             "checksums": [
                 {
@@ -66,7 +67,7 @@
             "fileTypes": [
                 "SOURCE"
             ],
-            "fileContributors": [ "Organization: Proprietary Software" ],
+            "fileContributors": [ "Organization: App-A srcpkg Provider, App-A-src@contacts" ],
             "licenseConcluded": "LicenseRef-proprietary-1",
             "checksums": [
                 {

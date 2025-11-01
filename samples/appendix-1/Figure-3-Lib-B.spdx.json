@@ -2,114 +2,91 @@
     "spdxVersion": "SPDX-2.3",
     "dataLicense": "CC0-1.0",
     "SPDXID": "SPDXRef-DOCUMENT",
-    "name": "figure-1-app-A-exec.json",
-    "documentNamespace": "Sample-documentNamespace-figure-1-app-A-exec",
+    "name": "figure-3-Lib-B.json",
+    "documentNamespace": "Sample-documentNamespace-figure-3-lib-b",
     "creationInfo": {
+	"comment": "SBOM Type: Build",
         "created": "2025-10-27T00:00:00Z",
         "creators": [
-            "Organization: App-A Provider, App-A@contacts"
+            "Organization: Lib-B Provider, Lib-B@contacts"
         ]
     },
-    "packages": [
-        {
-            "SPDXID": "SPDXRef-App-A",
-            "name": "App-A",
-            "versionInfo": "1.0.0",
-            "supplier": "Organization: App-A Provider, App-A@contacts", 
-            "downloadLocation": "NOASSERTION",
-            "filesAnalyzed": true,
-            "licenseConcluded": "MIT AND LicenseRef-proprietary-1",
-            "externalRefs": [
-                {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceType": "purl",
-                    "referenceLocator": "purl-app-a"
-                }
-            ]
-	    
-        }
-    ],
     "files": [
-        {
-            "fileName": "app-a.o",
-            "SPDXID": "SPDXRef-File-app-a.o",
-            "fileTypes": [
-                "BINARY"
-            ],
-            "fileContributors": [ "Organization: App-A Provider, App-A@contacts" ],
-            "licenseConcluded": "MIT",
-            "checksums": [
-                {
-                    "algorithm": "SHA1",
-                    "checksumValue": "3a22280662462357b7a9f877d27daf2a6ba7e1ca"
-                }
-            ]
-        },
-        {
-            "fileName": "app-b-modified.o",
-            "SPDXID": "SPDXRef-File-app-b-modified.o",
-            "fileTypes": [
-                "BINARY"
-            ],
-            "fileContributors": [ "Organization: App-A Provider, App-A@contacts" ],
-            "licenseConcluded": "MIT",
-            "checksums": [
-                {
-                    "algorithm": "SHA1",
-                    "checksumValue": "1bfd9c8c661a3d567448eb689cff0a850ace3c52"
-                }
-            ]
-        },
-        {
-            "fileName": "app-c.o",
-            "SPDXID": "SPDXRef-File-app-c.o",
-            "fileTypes": [
-                "BINARY"
-            ],
-            "fileContributors": [ "Organization: App-A Provider, App-A@contacts" ],	    
-            "licenseConcluded": "LicenseRef-proprietary-1",
-            "checksums": [
-                {
-                    "algorithm": "SHA1",
-                    "checksumValue": "eafe32c1345a0bbebaa5126934740a9e8c892696"
-                }
-            ]
-        },
         {
             "fileName": "Lib-B.a",
             "SPDXID": "SPDXRef-File-lib-b.a",
             "fileTypes": [
                 "BINARY"
             ],
-            "fileContributors": [ "Organization: Lib-B Provider, Lib-B@contaccts" ],	    
+            "fileContributors": [ "Organization: Lib-B Provider, Lib-B@contacts" ],
+            "licenseConcluded": "MIT AND LicenseRef-proprietary-2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "365016a8caa5b61e15b7ead354f1652639b52ee1"
+                }
+            ]
+        },
+        {
+            "fileName": "lib-a.c",
+            "SPDXID": "SPDXRef-File-lib-a.c",
+            "fileTypes": [
+                "SOURCE"
+            ],
+            "fileContributors": [ "OSS-Lib Provider" ],
+            "licenseConcluded": "MIT",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "7f361eaa914b2e899966b3faea2e0e5fa28e0457"
+                }
+            ]
+        },
+        {
+            "fileName": "lib-b-modified.c",
+            "SPDXID": "SPDXRef-File-app-b-modified.o",
+            "fileTypes": [
+                "SOURCE"
+            ],
+            "fileContributors": [ "Organization: Lib-B Provider, Lib-B@contacts" ],
+            "licenseConcluded": "MIT",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4d81792d44c1556f7eac5aa20444a6b6e665476d"
+                }
+            ]
+        },
+        {
+            "fileName": "lib-c.c",
+            "SPDXID": "SPDXRef-File-lib-c.c",
+            "fileTypes": [
+                "SOURCE"
+            ],
+            "fileContributors": [ "Organization: Lib-B Provider, Lib-B@contacts" ],
             "licenseConcluded": "LicenseRef-proprietary-2",
             "checksums": [
                 {
                     "algorithm": "SHA1",
-                    "checksumValue": "eafe32c1345a0bbebaa5126934740a9e8c892696"
+                    "checksumValue": "73e490024fea24dd7ee739ece6a614b1d0edb949"
                 }
             ]
         }
     ],
     "relationships": [
          {
-            "spdxElementId": "SPDXRef-App-A",
-            "relatedSpdxElement": "SPDXRef-File-app-a.o",
+            "spdxElementId": "SPDXRef-File-lib-b.a", 
+            "relatedSpdxElement": "SPDXRef-File-lib-a.c",
             "relationshipType": "CONTAINS"
         },
         {
-            "spdxElementId": "SPDXRef-App-A",
-            "relatedSpdxElement": "SPDXRef-File-app-b-modified.o",
+            "spdxElementId": "SPDXRef-File-lib-b.a", 
+            "relatedSpdxElement": "SPDXRef-File-lib-b-modified.c",
             "relationshipType": "CONTAINS"
         },
         {
-            "spdxElementId": "SPDXRef-App-A",
-            "relatedSpdxElement": "SPDXRef-File-app-c.o",
-            "relationshipType": "CONTAINS"
-        },
-        {
-            "spdxElementId": "SPDXRef-App-A",
-            "relatedSpdxElement": "SPDXRef-File-lib-b.a",
+            "spdxElementId": "SPDXRef-File-lib-b.a", 
+            "relatedSpdxElement": "SPDXRef-File-lib-c.c",
             "relationshipType": "CONTAINS"
         }
     ]
