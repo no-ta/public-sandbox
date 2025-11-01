@@ -3,7 +3,7 @@
     "dataLicense": "CC0-1.0",
     "SPDXID": "SPDXRef-DOCUMENT",
     "name": "app-A-src.json",
-    "documentNamespace": "https://App-A-srcpkg-Provider.com/App-A-srcpkg-1b657164-b468-11ef-a392-35d61d742a5e",
+    "documentNamespace": "<Sample documentNamespace>",
     "creationInfo": {
         "created": "2025-10-27T00:00:00Z",
         "creators": [
