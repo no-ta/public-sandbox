@@ -2,8 +2,8 @@
     "spdxVersion": "SPDX-2.3",
     "dataLicense": "CC0-1.0",
     "SPDXID": "SPDXRef-DOCUMENT",
-    "name": "app-A-src.json",
-    "documentNamespace": "<Sample documentNamespace>",
+    "name": "figure-1-app-A-src.json",
+    "documentNamespace": "Sample-documentNamespace-figure-1-app-A-src",
     "creationInfo": {
         "created": "2025-10-27T00:00:00Z",
         "creators": [
@@ -18,7 +18,7 @@
             "supplier": "Organization: App-A srcpkg Provider, App-A-src@contacts", 
             "downloadLocation": "NOASSERTION",
             "filesAnalyzed": true,
-            "licenseConcluded": "NOASSERTION",
+            "licenseConcluded": "MIT AND LicenseRef-proprietary-1",
             "externalRefs": [
                 {
                     "referenceCategory": "PACKAGE-MANAGER",
@@ -37,7 +37,7 @@
                 "SOURCE"
             ],
             "fileContributors": [ "OSS-A Provider" ],
-            "licenseConcluded": "NOASSERTION",
+            "licenseConcluded": "MIT",
             "checksums": [
                 {
                     "algorithm": "SHA1",
@@ -51,7 +51,7 @@
             "fileTypes": [
                 "SOURCE"
             ],
-            "fileContributors": [ "Organization: App-A srcpkg Provider, App-A-src@contats" ],
+            "fileContributors": [ "Organization: App-A srcpkg Provider, App-A-src@contacts" ],
             "licenseConcluded": "MIT",
             "checksums": [
                 {
