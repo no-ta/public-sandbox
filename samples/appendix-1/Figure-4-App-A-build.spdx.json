@@ -1,0 +1,137 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "figure-4-app-A-build.json",
+    "documentNamespace": "Sample-documentNamespace-figure-2-app-A-build",
+    "creationInfo": {
+	"comment": "SBOM Type: Build",
+        "created": "2025-10-27T00:00:00Z",
+        "creators": [
+            "Organization: App-A Provider, App-A@contacts"
+        ]
+    },
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-App-A",
+            "name": "App-A",
+            "versionInfo": "1.0.0",
+            "supplier": "Organization: App-A Provider, App-A@contacts", 
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": true,
+            "licenseConcluded": "MIT AND LicenseRef-proprietary-1",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "purl-app-a"
+                }
+            ]
+	    
+        }
+    ],
+    "files": [
+        {
+            "fileName": "app-a.o",
+            "SPDXID": "SPDXRef-File-app-a.o",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "fileContributors": [ "Organization: App-A Provider, App-A@contacts" ],
+            "licenseConcluded": "MIT",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "c875caa6209fbe3c08e9e82fda40ae35fcab5c07"
+                }
+            ]
+        },
+        {
+            "fileName": "app-b-modified.o",
+            "SPDXID": "SPDXRef-File-app-b-modified.o",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "fileContributors": [ "Organization: App-A Provider, App-A@contacts" ],
+            "licenseConcluded": "MIT",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "9b8576a308f20f135c7731fc79084bc0710d47aa"
+                }
+            ]
+        },
+        {
+            "fileName": "app-c.o",
+            "SPDXID": "SPDXRef-File-app-c.o",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "fileContributors": [ "Organization: App-A Provider, App-A@contacts" ],
+            "licenseConcluded": "LicenseRef-proprietary-1",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "f30b50e8729c67444e71129505899d0586049abe"
+                }
+            ]
+        },
+        {
+            "fileName": "Lib-B.a",
+            "SPDXID": "SPDXRef-File-lib-b.a",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "fileContributors": [ "Organization: Lib-B Provider, Lib-B@contacts" ],
+            "licenseConcluded": "MIT AND LicenseRef-proprietary-2",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "365016a8caa5b61e15b7ead354f1652639b52ee1"
+                }
+            ]
+        },
+        {
+            "fileName": "Lib-C.so",
+            "SPDXID": "SPDXRef-File-lib-c.so",
+            "fileTypes": [
+                "BINARY"
+            ],
+            "fileContributors": [ "Organization: Lib-C Provider, Lib-C@contacts" ],
+            "licenseConcluded": "MIT AND LicenseRef-proprietary-3",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "b824ee20bffd0abc958923d53011ff92db459bf5"
+                }
+            ]
+        }
+    ],
+    "relationships": [
+         {
+            "spdxElementId": "SPDXRef-App-A",
+            "relatedSpdxElement": "SPDXRef-File-app-a.o",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-App-A",
+            "relatedSpdxElement": "SPDXRef-File-app-b-modified.o",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-App-A",
+            "relatedSpdxElement": "SPDXRef-File-app-c.o",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-App-A",
+            "relatedSpdxElement": "SPDXRef-File-lib-b.a",
+            "relationshipType": "CONTAINS"
+        },
+        {
+            "spdxElementId": "SPDXRef-App-A",
+            "relatedSpdxElement": "SPDXRef-File-lib-c.so",
+            "relationshipType": "DEPENDS_ON"
+        }
+    ]
+}
