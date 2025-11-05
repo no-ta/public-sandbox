@@ -11,22 +11,26 @@
             "Organization: Lib-B Provider, Lib-B@contacts"
         ]
     },
-    "files": [
+    "packages": [
         {
-            "fileName": "Lib-B.a",
             "SPDXID": "SPDXRef-File-lib-b.a",
-            "fileTypes": [
-                "BINARY"
-            ],
-            "fileContributors": [ "Organization: Lib-B Provider, Lib-B@contacts" ],
+            "name": "Lib-B.a",
+            "versionInfo": "1.0.0",
+            "supplier": "Organization: Lib-B Provider, Lib-B@contacts",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": true,
             "licenseConcluded": "MIT AND LicenseRef-proprietary-2",
-            "checksums": [
+            "externalRefs": [
                 {
-                    "algorithm": "SHA1",
-                    "checksumValue": "365016a8caa5b61e15b7ead354f1652639b52ee1"
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "purl-lib-b"
                 }
             ]
-        },
+	    
+        }
+    ],
+    "files": [
         {
             "fileName": "lib-a.c",
             "SPDXID": "SPDXRef-File-lib-a.c",
@@ -44,7 +48,7 @@
         },
         {
             "fileName": "lib-b-modified.c",
-            "SPDXID": "SPDXRef-File-app-b-modified.o",
+            "SPDXID": "SPDXRef-File-lib-b-modified.c",
             "fileTypes": [
                 "SOURCE"
             ],
