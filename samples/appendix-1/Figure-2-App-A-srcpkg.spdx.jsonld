@@ -27,18 +27,18 @@
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Package/1",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/LicenseExpression/1",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/LicenseExpression/2",
-                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/LicenseExpression/3",		
+                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/LicenseExpression/3",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/1",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/2",
-                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/3",		
-                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/1"	,	
+                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/3",
+                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/1",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/2",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/3",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/4",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/5",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/6",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/7",
-                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/8",		
+                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/8",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/9",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/Relationship/10"
             ],
@@ -123,7 +123,7 @@
             "builtTime": "2024-05-06T00:00:00Z",
             "releaseTime": "2024-05-06T00:00:00Z",
             "validUntilTime": "2034-05-06T00:00:00Z",
-	    "comment": "if any",
+            "comment": "if any",
             "software_copyrightText": "copyright text"
         },
         {
@@ -151,7 +151,7 @@
             "builtTime": "2024-05-06T00:00:00Z",
             "releaseTime": "2024-05-06T00:00:00Z",
             "validUntilTime": "2034-05-06T00:00:00Z",
-	    "comment": "if any",
+            "comment": "if any",
             "software_copyrightText": "copyright text"
         },
         {
@@ -172,7 +172,7 @@
             "builtTime": "2024-05-06T00:00:00Z",
             "releaseTime": "2024-05-06T00:00:00Z",
             "validUntilTime": "2034-05-06T00:00:00Z",
-	    "comment": "if any",
+            "comment": "if any",
             "software_copyrightText": "copyright text"
         },
         {
@@ -200,7 +200,7 @@
             "to": [
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/1",
                 "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/2",
-                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/3"		
+                "https://spdx.org/spdxdocs/01c47915-4777-11d8-bc70-0090272ff725/File/3"
             ],
             "relationshipType": "contains"
         },

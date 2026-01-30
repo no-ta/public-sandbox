@@ -5,7 +5,7 @@
     "name": "figure-3-Lib-B.json",
     "documentNamespace": "Sample-documentNamespace-figure-3-lib-b",
     "creationInfo": {
-	"comment": "SBOM Type: Build",
+        "comment": "SBOM Type: Build",
         "created": "2025-10-27T00:00:00Z",
         "creators": [
             "Organization: Lib-B Provider, Lib-B@contacts"
@@ -27,7 +27,6 @@
                     "referenceLocator": "purl-lib-b"
                 }
             ]
-	    
         }
     ],
     "files": [

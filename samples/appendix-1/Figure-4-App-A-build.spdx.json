@@ -5,7 +5,7 @@
     "name": "figure-4-app-A-build.json",
     "documentNamespace": "Sample-documentNamespace-figure-2-app-A-build",
     "creationInfo": {
-	"comment": "SBOM Type: Build",
+        "comment": "SBOM Type: Build",
         "created": "2025-10-27T00:00:00Z",
         "creators": [
             "Organization: App-A Provider, App-A@contacts"
@@ -27,7 +27,6 @@
                     "referenceLocator": "purl-app-a"
                 }
             ]
-	    
         }
     ],
     "files": [
