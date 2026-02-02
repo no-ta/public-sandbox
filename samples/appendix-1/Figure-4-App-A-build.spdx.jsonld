@@ -243,13 +243,6 @@
             "name": "Lib-C.so",
             "comment": "if any",
             "creationInfo": "_:creationinfo-Lib-C",
-            "originatedBy": [
-                "NOASSERTION"
-            ],
-            "suppliedBy": "NOASSERTION",
-            "builtTime": "2024-05-06T00:00:00Z",
-            "releaseTime": "2024-05-06T00:00:00Z",
-            "validUntilTime": "2034-05-06T00:00:00Z",
 	    "comment": "if any",
             "software_copyrightText": "copyright text"
         },
